@@ -132,12 +132,12 @@ body {
 }
 
 .service-img {
-  position: absolute;
   top: 10px;
   right: 10px;
-  width: 80px; /* Adjust the size as needed */
+  width: 80px;
   height: auto;
-  border-radius: 5px; /* Optional: to match the card's rounded corners */
+  position: absolute;
+  border-radius: 5px;
 }
 
 #services-section .service-card {
@@ -244,6 +244,7 @@ body {
 .testimonial-author {
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 }
 
@@ -258,10 +259,25 @@ body {
 
 .star {
   font-size: 20px;
-  color: #f4c542; /* Star color */
+  color: #f4c542;
   margin-right: 2px;
 }
 
 .star:last-child {
-  color: #ddd; /* Color for empty star */
+  color: #ddd;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: auto;
+  z-index: 1000;
+}
+
+.whatsapp-icon img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
