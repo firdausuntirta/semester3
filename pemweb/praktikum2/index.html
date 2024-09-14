@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>PRAKTIKUM 2 | CSS</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="nav-bar">
+        <img
+          src="assets/image/mesindansetrika.png"
+          alt="Mesin Setrika"
+          class="nav-logo-left"
+        />
+
+        <div class="nav-text">
+          <h1 class="nav-name">FILA (Firdaus Laundry)</h1>
+          <p class="nav-services">Jalan Jalan Kemana</p>
+        </div>
+
+        <img
+          src="assets/image/bajudansepatu.png"
+          alt="Baju Sepatu"
+          class="nav-logo-right"
+        />
+      </nav>
+      <nav class="nav-bar2">
+        <ul class="list-bar2">
+          <li><a href="#services-section">Layanan</a></li>
+          <li><a href="#about-section">Tentang Kami</a></li>
+          <li><a href="#contact-section">Kontak</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <section id="hero" class="sticky">
+        <h2>Bersih, Cepat, dan Terjangkau</h2>
+        <p>Solusi laundry terbaik di kota Anda</p>
+      </section>
+
+      <section id="services-section">
+        <h2>Layanan Kami</h2>
+        <div class="service-card">
+          <img
+            src="assets/image/baju2.png"
+            alt="Cuci Kering"
+            class="service-img"
+          />
+          <h3>Cuci Kering (Rp 7.000/kg)</h3>
+          <p>Layanan cuci kering pakaian dengan hasil yang bersih dan wangi</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="assets/image/setrika2.png"
+            alt="Setrika"
+            class="service-img"
+          />
+          <h3>Setrika (Rp 5.000/kg)</h3>
+          <p>
+            Layanan menyetrika pakaian sehingga rapi dan siap dipakai kembali
+          </p>
+        </div>
+        <div class="service-card">
+          <img
+            src="assets/image/sepatu2.png"
+            alt="Cuci Sepatu"
+            class="service-img"
+          />
+          <h3>Cuci Sepatu (Rp 4.000/Sepatu)</h3>
+          <p>Layanan cuci sepatu agar sepatu Anda tetap bersih dan terawat</p>
+        </div>
+      </section>
+
+      <section id="about-section">
+        <h2>Tentang Kami</h2>
+        <p>
+          Fila (Firdaus Laundry) adalah layanan laundry terbaik di kota Anda.
+          Dengan layanan kami, Anda tidak perlu khawatir lagi soal pakaian kotor
+          Anda. Kami menawarkan layanan cuci kering, setrika, dan cuci sepatu
+          dengan harga yang terjangkau. Kami menjamin pakaian Anda akan bersih,
+          rapi, dan wangi. Fila, solusi laundry terbaik untuk Anda.
+        </p>
+      </section>
+
+      <section id="contact-section">
+        <h2>Kontak Kami</h2>
+        <form action="#">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit" class="btn-submit">Kirim</button>
+        </form>
+      </section>
+      <section id="testimonials">
+        <h2>Testimoni</h2>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>
+              "Layanan laundry yang sangat memuaskan! Pakaian saya selalu bersih
+              dan harum."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <p>- Pak Asep</p>
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Pelayanan cepat dan harga terjangkau. Sangat recommended!"</p>
+          </div>
+          <div class="testimonial-author">
+            <p>- Badrul</p>
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="main-footer">
+      <p>2024 &copy; Firdaus Satrio Utomo</p>
+    </footer>
+  </body>
+</html>
