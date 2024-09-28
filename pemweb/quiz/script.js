@@ -4,6 +4,9 @@ const iconSun = document.getElementById('icon-sun');
 const iconMoon = document.getElementById('icon-moon');
 const powerButton = document.getElementById('icon-power');
 const buttons = document.querySelectorAll('button');
+const MAX_LENGTH = 14;
+const MAX_RESULT_LENGTH = 10;
+
 
 let input = '';
 let history = '';
@@ -24,7 +27,7 @@ function updateDisplay() {
     } else if (history.includes('/100')) {
         history = history.replace(/\/100/g, '%');
     }
-    display.innerHTML = `<span style="font-size: 16px; color: gray;">${history}</span><br/><span style="font-size: 24px;">${input}</span>`;
+    display.innerHTML = `<span style="font-size: 14px; color: gray;">${history}</span><br/><span style="font-size: 24px;">${input}</span>`;
 }
 
 function buttonPress(value) {
@@ -58,7 +61,6 @@ function buttonPress(value) {
 
             result = eval(input).toString();
 
-
             history = `${input} = ${result}`;
             input = result;
 
@@ -67,6 +69,9 @@ function buttonPress(value) {
             input = '';
         }
     } else {
+        if (input.length >= MAX_LENGTH) {
+            return;
+        }
         input += value;
     }
 
