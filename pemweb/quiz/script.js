@@ -5,7 +5,6 @@ const iconMoon = document.getElementById('icon-moon');
 const powerButton = document.getElementById('icon-power');
 const buttons = document.querySelectorAll('button');
 const MAX_LENGTH = 14;
-const MAX_RESULT_LENGTH = 10;
 
 
 let input = '';
