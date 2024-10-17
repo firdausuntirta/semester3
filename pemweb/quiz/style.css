@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
@@ -160,3 +161,167 @@ body.dark-theme .btn-light:hover {
 #OnToggle i:hover {
   background-color: #e6f0ff;
 }
+=======
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #295f98;
+  color: black;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+input#display {
+  height: 60px;
+  font-size: 24px;
+}
+#display {
+  width: 100%;
+  height: 80px;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #4a4947;
+  color: white;
+  text-align: right;
+  border: none;
+  resize: none;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  resize: none;
+  overflow: hidden;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  outline: none;
+  cursor: pointer;
+}
+
+.table,
+.bg-firdaus {
+  background-color: #8eaccd;
+}
+
+button {
+  font-size: 33px;
+  height: 60px;
+  width: 100%;
+}
+
+.btn-op {
+  font-size: 20px;
+}
+
+.btn-light {
+  background-color: #11324d;
+  color: white;
+}
+
+body.dark-theme {
+  background-color: #05120d;
+  color: white;
+}
+
+.toggle-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme .toggle-circle {
+  background-color: #38705d;
+  color: white;
+}
+
+.body.dark-theme #toggleTheme {
+  background-color: white;
+  color: white;
+}
+
+body.dark-theme #icon-moon,
+body.dark-theme #icon-flask,
+body.dark-theme #icon-power {
+  color: #38705d;
+  background-color: white;
+}
+
+body.dark-theme #icon-moon:hover,
+body.dark-theme #icon-flask:hover,
+body.dark-theme #icon-power:hover {
+  color: white;
+  background-color: #4a4947;
+}
+
+body.dark-theme .table,
+body.dark-theme .bg-firdaus {
+  background-color: #1c3e32;
+}
+
+body.dark-theme .btn-light {
+  background-color: #42826c;
+  color: #ffffff;
+  border-color: #2f5f4e;
+}
+
+body.dark-theme .btn-light:hover {
+  background-color: #1c3e32;
+  color: #ffffff;
+}
+
+.toggle-circle i {
+  font-size: 24px;
+}
+
+.body.dark-theme .calculator {
+  color: white;
+}
+
+#toggleTheme i,
+#OnToggle i {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d2e0fb;
+}
+
+#OnToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  right: 0;
+  margin-inline-start: auto;
+}
+#toggleTheme i:hover,
+#OnToggle i:hover {
+  background-color: #e6f0ff;
+}
+>>>>>>> 141b7cd (UTS)
